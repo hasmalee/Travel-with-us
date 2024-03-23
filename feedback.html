@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QUERY</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navigationbar.css">
+    <script src="feedback.js"></script>
+    <link rel="stylesheet" href="styles2.css"> 
+    
+   
+    
+
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <div class="delivery-bar" >
+        <div> FREE 2-DAY SHIPPING FOR ORDERS OF $50 OR MORE, AND FREE RETURN SHIPPING </div>
+      </div>
+      
+            
+      
+    
+
+      <ul id= "nav" >
+            <li><a href="brandnew.html">HOME</a></li>
+            <li><a href=".html">PRODUCTS</a></li>
+            <li><a href=".html">QUIZ</a></li>
+            <li><a href=".html">SITEMAP</a></li>
+            <li><a href="feedback.html">QUERY</a></li>
+            <li><a href=".html">GALLERY</a></li>
+            <li><a href=".html">ABOUT US</a></li>
+         
+        </ul>
+      <!-- Query Form-->
+    <hr style="width:100%;text-align:left;margin-left:0 ">
+   <br>
+   <h2><center>Give Us Feedback</center></h2>  
+   <br>
+    <h3 ><center>Fill all the information and please press " View query " button to view form  , before submiting.</center></h3>
+<div class="display-query" id="display-query" >
+    <div class="whole-form" id="wholeform">
+        <Form id="form" name="formQuery" action="mailto:hasmalee.20220033@iit.ac.lk" method="post"  enctype="text/plain" class="form-contain">
+            <div class="form-main" id="queryForm">
+
+            <div class="row">
+                <div class="col-25">
+                <label for="fullname"><b> Full Name </b></label><br>
+                </div>
+                <div class="col-75">
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname"><br>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-25">
+                <label for="email"><b>Email</b></label><br>
+                </div>
+                <div class="col-75">
+                <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+                </div>
+            </div>
+                
+          <div class="row">
+                <div class="col-25">
+                <label for="subject"><b> favorite catagory: </b></label><br>
+                </div>
+                <div class="col-75">
+                <select name="subject" id="subject">
+                    <option value="" label="null"></option>
+                    <option value="specials">specials</option>
+                    <option value="accessories ">accessories </option>
+                    <option value="tourism wears">tourism wears</option>
+                    
+                    
+                </select><br>
+                </div>
+            </div>
+                
+                
+                
+             
+                
+            <div class="row">
+                <div class="col-25">
+                <label for="query"><b>Type your message</b></label><br>
+                </div>
+                <div class="col-75">
+                <textarea name=" query " id="query" rows="3" cols="20"
+                          placeholder="Enter your Query details:"></textarea><br><br>
+                </div>
+            </div>
+                
+                
+            <div class="row">
+                <div class="col-25">
+                <label for="subject"><b>Rate</b></label><br>
+                </div>
+                <div class="col-75"> 
+                    <br><b> ⭐⭐⭐⭐ </b><br>
+               <input type="radio" name="rate" id="rating_1" value="1" placeholder="Enter your rating " > 1 star <br> 
+               <input type="radio" name="rate" id="rating_1" value="2" placeholder="Enter your rating"> 2 star <br> 
+               <input type="radio" name="rate" id="rating_1" value="3" placeholder="Enter your rating"> 3 star <br>
+               <input type="radio" name="rate" id="rating_1" value="4" placeholder="Enter your rating"> 4 star <br><br>    
+
+              <button type="button" onclick=" checkButton()"> Submit </button> 
+     
+              <h3 id="disp" style= "color:green"> </h3>
+              <h4 id="error" style= "color:red"> </h4>
+
+              <script>
+              function checkButton() {  
+              var getSelectedValue = document.querySelector( 
+                'input[name="rate"]:checked'); 
+              
+              if(getSelectedValue != null) { 
+                document.getElementById("disp").innerHTML 
+                    = getSelectedValue.value 
+                    + " Rate is selected"; 
+              } 
+              else { 
+                 document.getElementById("error").innerHTML 
+                    = "*You have not selected any star"; 
+              } 
+              }  
+    
+             </script>         
+                
+              </div>
+         </div>         
+                
+           
+                
+                
+                <input type="button" value="Confirm" name="check-btn" id="check-btn" onclick="checkbtn()"  >
+                <input type="button" value="View Query" name="view-btn" id="view-btn" onclick="validateform()">
+            </div>
+          
+
+            <div class="right-text" id="display-text">
+                <h3 class="q-head">QUERY</h3>
+                <span id="names"></span><br>
+                <span id="emails"></span><br>
+                <span id="subjects"></span><br>
+                <span id="querys"></span><br>
+                <span id="rates"></span><br>
+                
+
+                <input type="submit" value="Send" name="send-btn" id="send-btn"  >
+                  
+            
+                <input type="button" value="Edit" name="check-btn" id="edit-btn" onclick="editbtn()">
+            </div>
+        </Form>
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+<br><br><br><br><br><br><br><br><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    <h2><center>customer reviews</center></h2>
+    <br>
+    <div class="slider owl-carousel">
+      <div class="card">
+        <div class="img"><img src="pictures/profile1.jpg" alt=""></div>
+        <div class="content">
+          <div class="title"> Briana Tozour</div>
+          <div class="sub-title">very satisfied😃</div>
+          <p>I bought a dress from here.The quality is remarkable.It's well worth the money for their high-quality products: Ihighly recommended this website!</p>
+          <div class="btn">
+            
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="pictures/profile2.jpg" alt=""></div>
+        <div class="content">
+          <div class="title">tom serri</div>
+          <div class="sub-title">satisfied😊</div>
+          <p>Finally an easy to use , all in one website for evrery age catogery.</p>
+          <div class="btn">
+           
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="pictures/profile3.jpg" alt=""></div>
+        <div class="content">
+          <div class="title">Edverd suhu</div>
+          <div class="sub-title">very satisfied😃</div>
+          <p>wonderful products , thank you so much for the arrangement!Great communication , quick delivery and fresh. </p>
+          <div class="btn">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+<a href = "feedback.html" class = "BackToTop">Back to top ↑</a>
+        
+ <hr style="width:100%;text-align:left;margin-left:0 "> 
+    
+    
+   <div class = "footer">
+     <br>
+       
+            <img src = "Logo/travel_logo%20(2).jpg" alt = "logo" id = "logo">
+            <img src = "Logo/facebook.png" alt = "facebook logo" id = "facebook">
+            <img src = "Logo/instagram.png" alt  = "instagram logo" id = "instagram">
+            <img src = "Logo/twitter.png" alt = "twitter logo" id = "twitter" >
+    
+        <div class = "meetdevs"> 
+            <p id = "FooterHeader1">MEET THE DEVELOPMENT TEAM</p>
+            <ul id = "DevNames">
+                <li><a href = "hasmaleepgediter.html">Hasmalee Vidanya</a></li>
+                
+            </ul>
+        </div>
+        <div class = "Contact">
+            <p id = "FooterHeader2">CONTACT US</p>
+            <ul id = "ContactList">
+                <li id = "tele">TELE : 0332276510</li>
+                <li id = "email">EMAIL : Travelwithus@gmail.com</li>
+                <li id = "location">57, Ramakrishna Road,<br> 
+                    Colombo 06,<br> Sri Lanka</li>
+            </ul>
+        </div>
+    </div> 
+    
+        
+    
+</body>
+</html>

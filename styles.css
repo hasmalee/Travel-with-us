@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'PT Sans', sans-serif;
+    position:relative;
+    margin : 0;
+    padding :0;
+    min-width: 100%;
+    min-height:100%;
+
+}
+
+hr {
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/*footer*/
+
+
+body{
+    margin :0;
+    font-family: 'PT sans' , sans-serif;
+    font-style: normal;
+    line-height: 20px;
+}
+.footer{
+    position: relative;
+    width : 100%;    
+    height : 285px;
+    
+    background-image: url(pictures/WhatsApp%20Image%202023-03-29%20at%2012.13.55.jpg);
+}
+
+
+#facebook{
+    position : absolute;
+    width: 35px;
+    height: 35px;
+    top :200px;
+    left :105px;
+}
+#instagram {
+    position : absolute;
+    width : 35px;
+    height : 35px;
+    top : 200px;
+    left : 157px;
+}
+#twitter {
+    position : absolute;
+    width : 35px;
+    height : 35px;
+    top : 200px;
+    left : 209px;
+}
+
+.meetdevs
+{
+    position : absolute;
+    left : 566px;
+    top:  55px;
+
+}
+#DevNames li{
+    min-width: 500px;
+    list-style-image: url(images/codingdev.png);
+    font-size:14px ;
+    padding-bottom:13px;
+}
+.FooterHeaders{
+    font-size: 18px;
+}
+.Contact{
+    position : absolute;
+    left : 1090px;
+    top:  55px;
+}
+#ContactList li{
+    padding-bottom : 13px;
+}
+#tele{
+    list-style-image: url(images/telephone-call.png);
+}
+#email{
+    list-style-image: url(images/email.png);
+}
+#location{
+    list-style-image: url(images/place.png);
+}
+#devby{
+    position:absolute;
+    bottom:0px;
+    left:60px;
+}
+#devby a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
